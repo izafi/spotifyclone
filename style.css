@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    --color: rgb(216, 212, 212);
+}
+
+body {
+    background-color: black;
+}
+
+.nav {
+    width: 100vw;
+    height: 60px;
+    margin-bottom: 3px;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.left {
+    width: 35vw;
+    height: 100vh;
+    border-radius: 10px;
+    background-color: rgba(18, 18, 18, 0.9);
+    overflow: hidden;
+    position: relative;
+}
+
+.home ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar-image,
+.home-image {
+    height: 25px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #1e1e1e;
+    border-radius: 25px;
+    padding: 10px 15px;
+    width: 360px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.search-bar input {
+    flex: 1;
+    margin: 0 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.search-bar input::placeholder {
+    color: #aaa;
+}
+
+.home-2 ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.home-2 ul li {
+    color: rgb(179, 179, 179);
+}
+
+.install-a,
+.signup-a,
+.login-a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.install-a button,
+.signup-a button,
+.login-a button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color);
+    background-color: black;
+
+    /* background: transparent; */
+    text-transform: capitalize;
+    cursor: pointer;
+    border: none;
+}
+
+.login-a button {
+    background-color: white;
+    border-radius: 21px;
+    padding: 16px 34px;
+    color: black;
+}
+
+.line {
+    background: var(--color);
+    height: 25px;
+    margin: 16px;
+    width: 1px;
+}
+
+.download-image img {
+    height: 15px;
+}
+
+.library {
+    min-height: 99vh;
+    background-color: #110f0fa6;
+    position: relative;
+}
+
+.box1 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+    height: 75px;
+    justify-content: space-between;
+    color: var(--color);
+    background-color: rgb(18, 18, 18);
+}
+
+.box1 span {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    gap: 5px;
+    padding: 12px;
+    font-size: 11px;
+    /* background-color: rgb(18, 18, 18); */
+}
+
+.footer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: var(--color);
+    font-size: 12px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer a span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-button a {
+    text-decoration: none;
+}
+
+.footer-button a button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    gap: 5px;
+    font-weight: 700;
+    color: var(--color);
+    background-color: transparent;
+    text-transform: capitalize;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 17px;
+}
+
+.footer-button button img {
+    display: flex;
+    height: 15px;
+    width: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 13px;
+    height: 40vh;
+}
+
+.minnor-box1,
+.minnor-box2 {
+    width: 100%;
+    height: 125px;
+    font-size: 16px;
+    border-radius: 15px;
+    margin: 5px;
+    color: var(--color);
+    background-color: rgb(31, 31, 31);
+}
+
+.minnor-box1 h2,
+.minnor-box2 h2 {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.minnor-box1 p,
+.minnor-box2 p {
+    font-size: 14px;
+    padding: 10px;
+    color: rgb(179, 179, 179);
+}
+
+.minnor-box1 a,
+.minnor-box2 a {
+    display: flex;
+    margin-left: 10px;
+    text-decoration: none;
+    color: var(--color);
+    font-weight: 700;
+}
+
+.minnor-box1 button,
+.minnor-box2 button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(7, 7, 7);
+    background-color: white;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 17px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+.left {
+    width: 35vw;
+    height: 100vh;
+    border-radius: 10px;
+    background-color: rgba(18, 18, 18, 0.9);
+    overflow-y: auto;
+    /* enable vertical scroll */
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    position: relative;
+    transition: scrollbar-color 0.3s ease;
+}
+
+Chrome/Edge/Safari .left::-webkit-scrollbar {
+    width: 6px;
+    transition: opacity 0.3s ease;
+    background: transparent;
+}
+
+.left::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hide scrollbar when not hovering */
+.left:not(:hover)::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+/* Firefox */
+.left:hover {
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.left {
+    scroll-behavior: smooth;
+}
+
+.left::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+}
+
+.left::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.left:not(:hover)::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.left::-webkit-scrollbar-button {
+    display: none;
+    height: 0;
+    width: 0;
+}
+
+.left::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+}
+
+.left::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.left:not(:hover)::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.left::-webkit-scrollbar-button {
+    display: none;
+    height: 0;
+    width: 0;
+}
+
+.right {
+    width: 65vw;
+    position: relative;
+    border-radius: 10px;
+    background-color: rgb(18, 18, 18);
+}
+
+.trandingsongs {
+    padding: 25px 0px 0px 25px;
+}
+
+.trandingsongs h1 {
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.cardcontainer {
+    display: flex;
+    height: 50vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+    /* padding: 0px 25px 25px 25px; */
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+    height: 230px;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--color);
+    text-align: center;
+}
+
+.card-content img {
+    height: 125px;
+    width: 125px;
+    border-radius: 10px;
+}
+
+.card-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+
+.play {
+    position: absolute;
+    top: 63px;
+    right: 10px;
+}
+
+.play svg {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.play svg:hover {
+    transform: scale(1.1);
+}
+
+.card-content h2 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.card-content p {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+}
+
+.card-content h2 a,
+.card-content p a {
+    text-decoration: none;
+    color: var(--color);
+}
+
+.playbar {
+    position: absolute;
+    height: auto;
+    bottom: 35px;
+    padding: 12px;
+    background-color: rgba(57, 154, 57, 0.521);
+    width: 62vw;
+}
+
+.play-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
