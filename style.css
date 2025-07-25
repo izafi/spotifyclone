@@ -85,8 +85,13 @@ body {
     cursor: pointer;
 }
 
-.home-2 ul li {
+.home-2 ul button {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    list-style: none;
     color: rgb(179, 179, 179);
+    cursor: pointer;
 }
 
 .install-a,
@@ -95,6 +100,8 @@ body {
     text-decoration: none;
     font-size: 16px;
     font-weight: 700;
+    display: flex;
+    gap: 10px;
 }
 
 .install-a button,
@@ -397,11 +404,23 @@ Chrome/Edge/Safari .left::-webkit-scrollbar {
     justify-content: center;
     width: 165px;
     height: 230px;
-    background-color: transparent;
+    background: none;
     border-radius: 10px;
     padding: 10px;
     color: var(--color);
     text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card:hover .play-button {
+    bottom: 42px;
+    opacity: 1;
+}
+
+.card:hover {
+    box-shadow: -18px 17px 7px -13px #3e3c3ca3;
 }
 
 .card-content img {
@@ -419,11 +438,11 @@ Chrome/Edge/Safari .left::-webkit-scrollbar {
     gap: 10px;
 }
 
-.play {
+/* .play {
     position: absolute;
     top: 63px;
     right: 10px;
-}
+} */
 
 .play svg {
     cursor: pointer;
@@ -454,10 +473,11 @@ Chrome/Edge/Safari .left::-webkit-scrollbar {
 }
 
 .playbar {
-    position: absolute;
-    height: auto;
+    position: fixed;
+    height: 65px;
     bottom: 35px;
     padding: 12px;
+    border-radius: 15px;
     background-color: rgba(57, 154, 57, 0.521);
     width: 62vw;
 }
@@ -468,4 +488,34 @@ Chrome/Edge/Safari .left::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+.seekbar {
+    height: 4px;
+    width: 97%;
+    position: absolute;
+    bottom: 4px;
+    background-color:  black;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.circle {
+    height: 10px;
+    width: 10px;
+    position: relative;
+    bottom: 4px;
+    left: 0%;
+    background-color: white;
+    border-radius: 50%;
+    transition: left 0.5s linear;
+    /* border: 2px solid white; */
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+.song-name , .song-time{
+    font-size: 12px;
+    padding: o 12px;
 }

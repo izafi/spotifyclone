@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="utility.css" />
-    <title>Spotify UI</title>
+    <title>Spotify - Web Player:Music for everyone</title>
 </head>
 
 <body>
@@ -15,9 +15,10 @@
         <div class="home flex gap item-center">
             <ul class="flex item-center gap">
                 <li><img class="invert auto-width" src="logo.svg" alt="logo" /></li>
-                <li><img class="navbar-image invert auto-width" src="home.svg" alt="home" /></li>
+                <li><button class="play-button-logo button-hover flex item-center"><img
+                            class="navbar-image invert auto-width" src="home.svg" alt="home" /></button></li>
                 <li>
-                    <div class="search-bar">
+                    <div class="search-bar a-hover">
                         <img class="image-size search-icon invert auto-width" src="kk.svg" alt="search" />
                         <input type="text" placeholder="What do you want to play?" />
                         <img class="image-size archive-icon invert auto-width" src="browse.svg" alt="browse" />
@@ -28,19 +29,26 @@
 
         <div class="home-2 flex item-center home-gap">
             <ul class="flex gap item-center">
-                <li>premium</li>
-                <li>support</li>
-                <li>download</li>
+                <button class="play-button-2 a-hover">
+                    <li>premium</li>
+                </button>
+                <button class="play-button-2 a-hover">
+                    <li>support</li>
+                </button>
+                <button class="play-button-2 a-hover">
+                    <li>download</li>
+                </button>
             </ul>
             <div class="line"></div>
             <a class="install-a flex item-center justify-content" href="#">
                 <span class="download-image">
                     <img class="invert auto-width" src="download.svg" alt="download" />
                 </span>
-                <button class="btn-install">install app</button>
+                <button class="btn-install a-hover">install app</button>
             </a>
-            <a class="signup-a flex item-center justify-content" href="#"><button>sign up</button></a>
-            <a class="login-a flex item-center justify-content" href="#"><button>log in</button></a>
+            <a class="signup-a flex item-center justify-content" href="#"><button class="a-hover">sign up</button></a>
+            <a class="login-a flex item-center justify-content" href="#"><button class="button-hover-2">log
+                    in</button></a>
         </div>
     </div>
 
@@ -63,12 +71,12 @@
                     <div class="minnor-box1 flex justify-content flex-direction-column">
                         <h2>create your first playlist</h2>
                         <p>it's easy, we will help you</p>
-                        <a href="#"><button>create playlist</button></a>
+                        <a href="#"><button class="button-hover-2">create playlist</button></a>
                     </div>
                     <div class="minnor-box2 flex justify-content flex-direction-column">
                         <h2>Let's find some podcasts to follow</h2>
                         <p>We'll keep you updated on new episodes</p>
-                        <a href="#"><button>Browse podcasts</button></a>
+                        <a href="#"><button class="button-hover-2">Browse podcasts</button></a>
                     </div>
 
                     <div class="footer">
@@ -104,97 +112,31 @@
                 <h1>trending songs</h1>
                 <div class="cardcontainer">
                     <!-- Song Card 1 -->
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="play">
-                                <button class="play-button">
-                                <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="24" cy="24" r="24" fill="green" />
-                                    <path d="M18 33V15L34 24L18 33Z" fill="black" />
-                                </svg>
-                                </button>
-                            </div>
-                            <img src="song1.jpeg" alt="song image">
-                            <div class="song-info">
-                                <h2><a href="#">Kya sach ho tum?</a></h2>
-                                <p><a href="#">Amna Riaz</a></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Song Card 2 -->
-                    <div class="card">
-                        <div class="card-content">
-                            <img src="song2.jpeg" alt="song image">
-                            <div class="song-info">
-                                <h2><a href="#">at peace</a></h2>
-                                <p><a href="#">Karan Aujla</a></p>
-                            </div>
-                            <div class="play">
-                                <button class="play-button">
-                                <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="24" cy="24" r="24" fill="green" />
-                                    <path d="M18 33V15L34 24L18 33Z" fill="black" />
-                                </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Song Card 3 -->
-                    <div class="card">
-                        <div class="card-content">
-                            <img src="song3.jpeg" alt="song image">
-                            <div class="song-info">
-                                <h2><a href="#">Guzaarishein</a></h2>
-                                <p><a href="#">Samar Jafri</a> <a href="#">Alistair Alvin</a></p>
-                            </div>
-                            <div class="play">
-                                <button class="play-button">
-                                <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="24" cy="24" r="24" fill="green" />
-                                    <path d="M18 33V15L34 24L18 33Z" fill="black" />
-                                </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Song Card 4 -->
-                    <div class="card">
-                        <div class="card-content">
-                            <img src="song5.jpeg" alt="song image">
-                            <div class="song-info">
-                                <h2><a href="#">Sohni Lagdi</a></h2>
-                                <p><a href="#">Diljit Dosanjh</a></p>
-                            </div>
-                            <div class="play">
-                                <button class="play-button">
-                                <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="24" cy="24" r="24" fill="green" />
-                                    <path d="M18 33V15L34 24L18 33Z" fill="black" />
-                                </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="cardcontainer" id="song-container"></div>
                 </div>
             </div>
             <div class="playbar">
-                <div class="song-name">
-
+                <div class="seekbar">
+                    <div class="circle"></div>
                 </div>
-                <div class="play-icon">
-                   <button class="cursor-pointer play-icon-size play-button">  <img class="cursor-pointer play-icon-size" src="previous.svg" alt=""></button>
-                   <button class="cursor-pointer play-icon-size play-button"> <img class="cursor-pointer play-icon-size" src="play.svg" alt=""></button>
-                   <button class="cursor-pointer play-icon-size play-button"> <img class="cursor-pointer play-icon-size" src="next.svg" alt=""></button>
-                </div>
-                <div class="song-time">
+                <div class="info">
+                    <div class="song-name">
+                    </div>
+                    <div class="play-icon">
+                        <button class="cursor-pointer play-icon-size playbar-button"> <img
+                                class="pevious-button cursor-pointer play-icon-size" src="previous.svg" alt=""></button>
+                        <button class="play cursor-pointer play-icon-size playbar-button"> <img
+                                class="cursor-pointer play-icon-size" src="play.svg" alt="play/pause button"></button>
+                        <button class="next-button cursor-pointer play-icon-size playbar-button"> <img
+                                class="cursor-pointer play-icon-size" src="next.svg" alt=""></button>
+                    </div>
+                    <div class="song-time">
 
+                    </div>
                 </div>
             </div>
         </div>
-    </div>\
+    </div>
     <script src="script.js"></script>
 </body>
 
