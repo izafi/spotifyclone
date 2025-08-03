@@ -50,6 +50,7 @@ body {
     cursor: pointer;
 }
 
+/* Default: show full bar */
 .search-bar {
     display: flex;
     align-items: center;
@@ -59,6 +60,7 @@ body {
     width: 360px;
     color: #ccc;
     cursor: pointer;
+    transition: width 0.3s ease, opacity 0.3s ease;
 }
 
 .search-bar input {
@@ -71,9 +73,17 @@ body {
     font-size: 16px;
 }
 
+.search-img {
+    display: none;
+}
+
+/* Placeholder color */
 .search-bar input::placeholder {
     color: #aaa;
 }
+
+
+
 
 .home-2 ul {
     display: flex;
@@ -365,7 +375,9 @@ Chrome/Edge/Safari .left::-webkit-scrollbar {
     height: 0;
     width: 0;
 }
-
+.cross{
+    display: none;
+}
 .right {
     width: 65vw;
     position: relative;
@@ -375,6 +387,9 @@ Chrome/Edge/Safari .left::-webkit-scrollbar {
 
 .trandingsongs {
     padding: 25px 0px 0px 25px;
+}
+.hamburger{
+    display: none;
 }
 
 .trandingsongs h1 {
@@ -480,6 +495,7 @@ Chrome/Edge/Safari .left::-webkit-scrollbar {
     border-radius: 15px;
     background-color: rgba(57, 154, 57, 0.521);
     width: 62vw;
+   min-height:44px ;
 }
 
 .play-icon {
@@ -519,3 +535,340 @@ Chrome/Edge/Safari .left::-webkit-scrollbar {
     font-size: 12px;
     padding: o 12px;
 }
+
+
+/* -------------------------------------------
+   Extra Small Devices (portrait phones, < 576px)
+-------------------------------------------- */
+
+@media (max-width: 350.98px) {
+  /* 🔹 Navbar becomes vertical */
+  .nav {
+    gap: 6px;
+  }
+  .navbar-image,
+  .home-image {
+    height: 16px;
+  }
+
+  .home ul {
+    gap: 5px;
+  }
+
+  .home ul li {
+    font-size: 11px;
+  }
+  .logo img {
+    width: 120px;
+  }
+
+  .search-bar {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .signup-a button,
+  .login-a button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* 🔹 Stack song cards in a column */
+  .cardcontainer{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .card-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .card-content img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card h2 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .playbar {
+    width: 95vw;
+    bottom: 10px;
+  }
+}
+
+/* -------------------------------------------
+   Small Devices (landscape phones, 576px - 767px)
+-------------------------------------------- */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .search-bar {
+    width: 100%;
+  }
+
+  .left {
+    width: 100%;
+    position: static;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .cardcontainer {
+    justify-content: center;
+
+  }
+
+  .card {
+    width: 125px;
+    height: 181px;
+  }
+  .card-content img{
+    width: 88px;
+    height: 82px;
+  }
+  .playbar {
+    width: 95vw;
+  }
+   .search-bar {
+    display: flex !important;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .search-bar input {
+    display: block;
+    width: 90%;
+    padding: 8px;
+    font-size: 14px;
+  }
+  .search-img {
+    display: none; /* optional depending on UX */
+  }
+}
+
+/* -------------------------------------------
+   Medium Devices (tablets, 768px - 991px)
+-------------------------------------------- */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .left {
+    width: 40vw;
+  }
+
+  .right {
+    width: 60vw;
+  }
+
+  .card {
+    width: 150px;
+    height: 220px;
+  }
+
+  .playbar {
+    width: 90vw;
+  }
+}
+
+/* -------------------------------------------
+   Large Devices (small laptops, 992px - 1199px)
+-------------------------------------------- */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .left {
+    width: 35vw;
+  }
+
+  .right {
+    width: 65vw;
+  }
+
+  .playbar {
+    width: 92vw;
+  }
+
+  .signup-a button,
+  .login-a button {
+    font-size: 12px;
+    padding: 8px 18px;
+  }
+
+  .card {
+    width: 160px;
+    height: 230px;
+  }
+}
+/* Small screens */
+@media (max-width: 1012px) {
+       .search-bar {
+    display: flex !important;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    transition: all ease 0.3s;
+  }
+  .search-bar input {
+    display: block;
+    width: 90%;
+    padding: 8px;
+    font-size: 14px;
+    transition: all ease 0.3s;  
+  }
+    .search-wrapper.expanded .search-bar {
+        display: flex;
+        position: absolute;
+        top: 50px; /* adjust based on your layout */
+        left: 10px;
+        z-index: 999;
+        width: 90vw;
+    }
+}
+
+
+@media(max-width: 1035px) {
+  .signup-a button,
+  .login-a button,
+  .btn-install{ 
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+}
+
+@media(max-width : 1200px){
+    .left{
+        background-color: black;
+        position: absolute;
+        left: -120%;
+        transition: all 0.3s;
+        z-index: 1;
+        width: 333px;
+    }
+    .right{
+        width: 100vw;
+    }
+    .playbar{
+        width: 98vw;
+    }
+    .hamburger{
+        display: block;
+    }
+    .cross{
+        display: block;
+    }
+    .plus{
+        display: none;
+    }
+}
+@media (max-width: 575.98px) {
+  /* Navbar becomes vertical */
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .search-bar {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .search-bar input {
+    display: block;
+    width: 90%;
+    padding: 8px;
+    font-size: 14px;
+  }
+.browse-img{
+    display: block;
+}
+  .signup-a button,
+  .login-a button {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  /* Song card container stacks vertically */
+  .cardcontainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .card {
+    width: 95%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .card-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .card-content img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .card h2 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  /* Adjust playbar */
+  .playbar {
+    width: 95vw;
+    bottom: 10px;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .abovebar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .songinfo,
+  .songtime {
+    text-align: center;
+  }
+
+  .seekbar {
+    width: 100%;
+  }
+}
+
