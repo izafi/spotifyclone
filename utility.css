@@ -1,0 +1,164 @@
+.flex {
+    display: flex;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+.item-center {
+    align-items: center;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.border {
+    border: 3px solid black;
+}
+
+.gap {
+    gap: 10px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.navbar-image {
+    height: 30px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.invert-white {
+    filter: invert(0);
+}
+
+.image-size {
+    height: 25px;
+    width: 25px;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-box {
+    background-color: rgb(18, 18, 18);
+}
+
+.border-radius {
+    border-radius: 10px;
+}
+
+.auto-width {
+    width: auto;
+}
+
+.nav-width {
+    width: 98vw;
+}
+
+.p-1 {
+    padding-right: 13px;
+}
+
+.fz-11 {
+    font-size: 11px;
+}
+
+.home-gap {
+    gap: 10px;
+}
+
+.overflow {
+    overflow: scroll;
+}
+
+.text-color {
+    color: var(--color);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.play-icon-size {
+    height: 27px;
+}
+
+.play-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -60px;
+    left: 74%;
+    border: none;
+    border-radius: 50%;
+    background: none;
+    transform: translateX(-50%);
+    transition: bottom 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+.play-button-logo {
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(27, 26, 26);
+    height: 42px;
+    width: 42px;
+}
+
+.button-hover:hover {
+    transition: all ease-in-out 0.1ms;
+    scale: 1.1;
+    background-color: #2a2a2a;
+}
+
+.button-hover-2:hover {
+    transition: all ease-in-out 0.1ms;
+    scale: 1.1;
+}
+
+.a-hover:hover {
+    transition: all ease-in-out 50ms;
+    transform: scale(1.04);
+    color: #fff;
+}
+
+.play-button-2 {
+    border: none;
+    background: none;
+}
+
+.playbar-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.playbar-button:hover {
+    transition: all ease-in-out 0.1ms;
+    scale: 1.1;
+    background-color: rgb(7, 172, 7);
+}

@@ -1,0 +1,912 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  --color: rgb(216, 212, 212);
+}
+
+body {
+  background-color: black;
+}
+
+.nav {
+  width: 100vw;
+  height: 60px;
+  margin-bottom: 3px;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+
+.left {
+  width: 35vw;
+  height: 100vh;
+  border-radius: 10px;
+  background-color: rgba(18, 18, 18, 0.9);
+  overflow: hidden;
+  position: relative;
+}
+
+.home ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar-image,
+.home-image {
+  height: 25px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+/* Default: show full bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #1e1e1e;
+  border-radius: 25px;
+  padding: 10px 15px;
+  width: 360px;
+  color: #ccc;
+  cursor: pointer;
+  transition: width 0.3s ease, opacity 0.3s ease;
+}
+
+.search-bar input {
+  flex: 1;
+  margin: 0 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.search-img {
+  display: none;
+}
+
+/* Placeholder color */
+.search-bar input::placeholder {
+  color: #aaa;
+}
+
+
+
+
+.home-2 ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.home-2 ul button {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  list-style: none;
+  color: rgb(179, 179, 179);
+  cursor: pointer;
+}
+
+.install-a,
+.signup-a,
+.login-a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  gap: 10px;
+}
+
+.install-a button,
+.signup-a button,
+.login-a button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color);
+  background-color: black;
+
+  /* background: transparent; */
+  text-transform: capitalize;
+  cursor: pointer;
+  border: none;
+}
+
+.login-a button {
+  background-color: white;
+  border-radius: 21px;
+  padding: 16px 34px;
+  color: black;
+}
+
+.line {
+  background: var(--color);
+  height: 25px;
+  margin: 16px;
+  width: 1px;
+}
+
+.download-image img {
+  height: 15px;
+}
+
+.library {
+  min-height: 99vh;
+  background-color: #110f0fa6;
+  position: relative;
+}
+
+.box1 {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 10px;
+  height: 75px;
+  justify-content: space-between;
+  color: var(--color);
+  background-color: rgb(18, 18, 18);
+}
+
+.box1 span {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  gap: 5px;
+  padding: 12px;
+  font-size: 11px;
+  /* background-color: rgb(18, 18, 18); */
+}
+
+.footer a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: var(--color);
+  font-size: 12px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer a span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-button a {
+  text-decoration: none;
+}
+
+.footer-button a button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  gap: 5px;
+  font-weight: 700;
+  color: var(--color);
+  background-color: transparent;
+  text-transform: capitalize;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 17px;
+}
+
+.footer-button button img {
+  display: flex;
+  height: 15px;
+  width: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 13px;
+  height: 40vh;
+}
+
+.minnor-box1,
+.minnor-box2 {
+  width: 100%;
+  height: 125px;
+  font-size: 16px;
+  border-radius: 15px;
+  margin: 5px;
+  color: var(--color);
+  background-color: rgb(31, 31, 31);
+}
+
+.minnor-box1 h2,
+.minnor-box2 h2 {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.minnor-box1 p,
+.minnor-box2 p {
+  font-size: 14px;
+  padding: 10px;
+  color: rgb(179, 179, 179);
+}
+
+.minnor-box1 a,
+.minnor-box2 a {
+  display: flex;
+  margin-left: 10px;
+  text-decoration: none;
+  color: var(--color);
+  font-weight: 700;
+}
+
+.minnor-box1 button,
+.minnor-box2 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(7, 7, 7);
+  background-color: white;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 17px;
+  border: none;
+  margin-bottom: 5px;
+}
+
+.left {
+  width: 35vw;
+  height: 100vh;
+  border-radius: 10px;
+  background-color: rgba(18, 18, 18, 0.9);
+  overflow-y: auto;
+  /* enable vertical scroll */
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  position: relative;
+  transition: scrollbar-color 0.3s ease;
+}
+
+Chrome/Edge/Safari .left::-webkit-scrollbar {
+  width: 6px;
+  transition: opacity 0.3s ease;
+  background: transparent;
+}
+
+.left::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hide scrollbar when not hovering */
+.left:not(:hover)::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* Firefox */
+.left:hover {
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.left {
+  scroll-behavior: smooth;
+}
+
+.left::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}
+
+.left::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.left:not(:hover)::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.left::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+.left::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}
+
+.left::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.left:not(:hover)::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.left::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+.cross {
+  display: none;
+}
+
+.right {
+  width: 65vw;
+  position: relative;
+  border-radius: 10px;
+  background-color: rgb(18, 18, 18);
+}
+
+.trandingsongs {
+  padding: 25px 0px 0px 25px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.trandingsongs h1 {
+  display: flex;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.cardcontainer {
+  display: flex;
+  height: 50vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 20px;
+  /* padding: 0px 25px 25px 25px; */
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 165px;
+  height: 230px;
+  background: none;
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--color);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card:hover .play-button {
+  bottom: 42px;
+  opacity: 1;
+}
+
+.card:hover {
+  box-shadow: -18px 17px 7px -13px #3e3c3ca3;
+}
+
+.card-content img {
+  height: 125px;
+  width: 125px;
+  border-radius: 10px;
+}
+
+.card-content {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+}
+
+/* .play {
+    position: absolute;
+    top: 63px;
+    right: 10px;
+} */
+
+.play svg {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.play svg:hover {
+  transform: scale(1.1);
+}
+
+.card-content h2 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.card-content p {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+}
+
+.card-content h2 a,
+.card-content p a {
+  text-decoration: none;
+  color: var(--color);
+}
+
+.playbar {
+  position: fixed;
+  height: 65px;
+  bottom: 35px;
+  padding: 12px;
+  border-radius: 15px;
+  background-color: rgba(57, 154, 57, 0.521);
+  width: 62vw;
+  min-height: 44px;
+}
+
+.play-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.seekbar {
+  height: 4px;
+  width: 97%;
+  position: absolute;
+  bottom: 4px;
+  background-color: black;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.circle {
+  height: 10px;
+  width: 10px;
+  position: relative;
+  bottom: 4px;
+  left: 0%;
+  background-color: white;
+  border-radius: 50%;
+  transition: left 0.5s linear;
+  /* border: 2px solid white; */
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.song-name,
+.song-time {
+  font-size: 12px;
+  padding: o 12px;
+}
+
+.volume {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.range input{
+  cursor: pointer;
+}
+
+
+/* -------------------------------------------
+   Extra Small Devices (portrait phones, < 576px)
+-------------------------------------------- */
+
+@media (max-width: 350.98px) {
+
+  /* 🔹 Navbar becomes vertical */
+  .nav {
+    gap: 6px;
+  }
+
+  .navbar-image,
+  .home-image {
+    height: 16px;
+  }
+
+  .home ul {
+    gap: 5px;
+  }
+
+  .home ul li {
+    font-size: 11px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .search-bar {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .signup-a button,
+  .login-a button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* 🔹 Stack song cards in a column */
+  .cardcontainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .card-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .card-content img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card h2 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .playbar {
+    width: 95vw;
+    bottom: 10px;
+  }
+}
+
+/* -------------------------------------------
+   Small Devices (landscape phones, 576px - 767px)
+-------------------------------------------- */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .search-bar {
+    width: 100%;
+  }
+
+  .left {
+    width: 100%;
+    position: static;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .cardcontainer {
+    justify-content: center;
+
+  }
+
+  .card {
+    width: 125px;
+    height: 181px;
+  }
+
+  .card-content img {
+    width: 88px;
+    height: 82px;
+  }
+
+  .playbar {
+    width: 95vw;
+  }
+
+  .search-bar {
+    display: flex !important;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .search-bar input {
+    display: block;
+    width: 90%;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .search-img {
+    display: none;
+    /* optional depending on UX */
+  }
+}
+
+/* -------------------------------------------
+   Medium Devices (tablets, 768px - 991px)
+-------------------------------------------- */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .left {
+    width: 40vw;
+  }
+
+  .right {
+    width: 60vw;
+  }
+
+  .card {
+    width: 150px;
+    height: 220px;
+  }
+
+  .playbar {
+    width: 90vw;
+  }
+}
+
+/* -------------------------------------------
+   Large Devices (small laptops, 992px - 1199px)
+-------------------------------------------- */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .left {
+    width: 35vw;
+  }
+
+  .right {
+    width: 65vw;
+  }
+
+  .playbar {
+    width: 92vw;
+  }
+
+  .signup-a button,
+  .login-a button {
+    font-size: 12px;
+    padding: 8px 18px;
+  }
+
+  .card {
+    width: 160px;
+    height: 230px;
+  }
+}
+
+/* Small screens */
+@media (max-width: 1012px) {
+  .search-bar {
+    display: flex !important;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    transition: all ease 0.3s;
+  }
+
+  .search-bar input {
+    display: block;
+    width: 90%;
+    padding: 8px;
+    font-size: 14px;
+    transition: all ease 0.3s;
+  }
+
+  .search-wrapper.expanded .search-bar {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    /* adjust based on your layout */
+    left: 10px;
+    z-index: 999;
+    width: 90vw;
+  }
+}
+
+
+@media(max-width: 1035px) {
+
+  .signup-a button,
+  .login-a button,
+  .btn-install {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+}
+
+@media(max-width : 1200px) {
+  .left {
+    background-color: black;
+    position: absolute;
+    left: -120%;
+    transition: all 0.3s;
+    z-index: 1;
+    width: 333px;
+  }
+
+  .right {
+    width: 100vw;
+  }
+
+  .playbar {
+    width: 98vw;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .cross {
+    display: block;
+  }
+
+  .plus {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+
+  /* Navbar becomes vertical */
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .search-bar {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .search-bar input {
+    display: block;
+    width: 90%;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .browse-img {
+    display: block;
+  }
+
+  .signup-a button,
+  .login-a button {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  /* Song card container stacks vertically */
+  .cardcontainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .card {
+    width: 95%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .card-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .card-content img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .card h2 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  /* Adjust playbar */
+  .playbar {
+    width: 95vw;
+    bottom: 10px;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .abovebar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .songinfo,
+  .songtime {
+    text-align: center;
+  }
+
+  .seekbar {
+    width: 100%;
+  }
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+    <title>Spotify - Web Player:Music for everyone</title>
+</head> 
+
+<body>
+    <!-- Navbar -->
+    <div class="nav border flex item-center justify-content-space-between nav-width">
+        <div class="home flex gap item-center">
+            <ul class="flex item-center gap">
+                <li><img class="invert auto-width" src="image/logo.svg" alt="logo" /></li>
+                <li><button class="play-button-logo button-hover flex item-center"><img
+                            class="navbar-image invert auto-width" src="image/home.svg" alt="home" /></button></li>
+                <li class="search-wrapper">
+                    <!-- <img class="search-img search-toggle invert" src="https://upload.wikimedia.org/wikipedia/commons/5/55/Magnifying_glass_icon.svg" width="25" height="25" /> -->
+                    <div class="search-bar a-hover">
+                        <img class="image-size search-icon invert auto-width" src="image/kk.svg" alt="search" />
+                        <input type="text" name="search" placeholder="What do you want to play?" />
+                        <img class="browse-img image-size archive-icon invert auto-width" src="image/browse.svg"
+                            alt="browse" />
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="home-2 flex item-center home-gap">
+            <ul class="flex gap item-center">
+                <button class="play-button-2 a-hover">
+                    <li>premium</li>
+                </button>
+                <button class="play-button-2 a-hover">
+                    <li>support</li>
+                </button>
+                <button class="play-button-2 a-hover">
+                    <li>download</li>
+                </button>
+            </ul>
+            <div class="line"></div>
+            <a class="install-a flex item-center justify-content" href="#">
+                <span class="download-image">
+                    <img class="invert auto-width" src="image/download.svg" alt="download" />
+                </span>
+                <button class="btn-install a-hover">install app</button>
+            </a>
+            <a class="signup-a flex item-center justify-content" href="#"><button class="signup-btn a-hover">sign
+                    up</button></a>
+            <a class="login-a flex item-center justify-content" href="#"><button class="login-btn button-hover-2">log
+                    in</button></a>
+        </div>
+    </div>
+
+    <!-- Main container -->
+    <div class="container flex">
+        <!-- Left Sidebar -->
+        <div class="left border border-radius">
+            <div class="library">
+                <div class="box1">
+                    <span>your library</span>
+                    <span class="icon flex">
+                        <img class="cross cursor invert" src="image/cross.svg" alt="">
+                        <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="auto" height="24" fill="white"
+                            viewBox="0 0 24 24">
+                            <path d="M12 5v14M5 12h14" stroke="white" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </span>
+                </div>
+
+                <div class="box2 overflow">
+                    <div class="minnor-box1 flex justify-content flex-direction-column">
+                        <h2>create your first playlist</h2>
+                        <p>it's easy, we will help you</p>
+                        <a href="#"><button class="button-hover-2">create playlist</button></a>
+                    </div>
+                    <div class="minnor-box2 flex justify-content flex-direction-column">
+                        <h2>Let's find some podcasts to follow</h2>
+                        <p>We'll keep you updated on new episodes</p>
+                        <a href="#"><button class="button-hover-2">Browse podcasts</button></a>
+                    </div>
+
+                    <div class="footer">
+                        <div><a href="https://www.spotify.com/pk-en/legal/"><span>Legal</span></a></div>
+                        <div><a href="https://www.spotify.com/pk-en/safetyandprivacy/"><span>Safety & Privacy
+                                    Center</span></a></div>
+                        <div><a href="https://www.spotify.com/pk-en/legal/privacy-policy/"><span>Privacy
+                                    Policy</span></a></div>
+                        <div><a href="https://www.spotify.com/pk-en/legal/cookies-policy/"><span>Cookies</span></a>
+                        </div>
+                        <div><a href="https://www.spotify.com/pk-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                        </div>
+                        <div><a href="https://www.spotify.com/pk-en/accessibility/"><span>Accessibility</span></a></div>
+                        <div><a href="https://www.spotify.com/legal/cookies-policy/"><span>Cookies</span></a></div>
+                        <div class="footer-button">
+                            <a href="#">
+                                <button>
+                                    <span>
+                                        <img class="footer-image invert" src="image/language.svg" alt="language">
+                                    </span>
+                                    english
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Content Area -->
+        <div class="right border border-radius bg-box text-color">
+            <div class="trandingsongs">
+                <div class="ham flex item-center gap ">
+                    <img class="hamburger invert cursor" src="image/hamburger.svg" alt="hamburger">
+                    <h1>trending songs</h1>
+                </div>
+                <div class="cardcontainer">
+                    <!-- Song Card 1 -->
+                    <div class="cardcontainer" id="song-container"></div>
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+                <div class="info">
+                    <div class="song-name">
+                    </div>
+                    <div class="play-icon">
+                        <button class="cursor-pointer play-icon-size playbar-button"> <img
+                                class="previous-button cursor-pointer play-icon-size" src="image/previous.svg"
+                                alt=""></button>
+                        <button class="play cursor-pointer play-icon-size playbar-button"> <img
+                                class="cursor-pointer play-icon-size" src="image/play.svg" alt="play/pause button"></button>
+                        <button class="next-button cursor-pointer play-icon-size playbar-button"> <img
+                                class="cursor-pointer play-icon-size" src="image/next.svg" alt=""></button>
+                    </div>
+                    <div class="playbar-right flex justify-content-space-between item-center gap-20">
+                        <div class="song-time">
+
+                        </div>
+                        <div class="volume">
+                            <img src="image/volume.svg" alt="">
+                            <div class="range">
+                                <input  type="range" name="volume" id="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
